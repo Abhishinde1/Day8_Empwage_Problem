@@ -7,7 +7,7 @@ namespace basic
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Empwage Program");
-            Console.WriteLine("Choose opion \n 1.Check emp abs or pres \n 2.Calculate daily wage\n 3. Part time wage \n 4. Emp Wage Using Case");
+            Console.WriteLine("Choose opion \n 1.Check emp abs or pres \n 2.Calculate daily wage\n 3. Part time wage \n 4. Emp Wage Using Case \n 5. Month Wage \n 6.Calculate Wage for Month \n 7. Compute Wage");
 
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -18,6 +18,7 @@ namespace basic
                 case 4: UC4.CalculateDailyWageUsingCase(); break;
                 case 5: UC5.MonthWage(); break;
                 case 6: UC6.CalculateWage(); break;
+                case 7: UC7Refactor.ComputeEmpWage(); break;
             }
         }
     }
